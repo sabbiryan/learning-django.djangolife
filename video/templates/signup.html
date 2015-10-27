@@ -1,0 +1,14 @@
+{% extends 'theme.html' %}
+
+{% block main_contant %}
+
+    <form method="post">
+
+        {{ form.as_p }}
+
+        {% csrf_token %}
+
+        <input class="btn btn-primary" type="submit" value="Sign up" />
+    </form>
+
+{% endblock %}

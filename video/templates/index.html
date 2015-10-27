@@ -1,0 +1,14 @@
+{% extends 'theme.html' %}
+
+{% block main_contant %}
+
+    <div class="row">
+        <div class="col-md-offset-1 col-md-5 center">
+            <h1>{{ last_video.title }}</h1>
+            <div>
+                {{ last_video.embed_code | safe }}
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
